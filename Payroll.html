@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Payroll.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+        <li><a href="WebsiteMain.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Assignments</a>
+            <ul class="dropdown-menu">
+              <li><a href="Converter.html">Conversion Calculators</a></li>
+              <li><a href="Assignment2.html">Income Tax Calculator</a></li>
+              <li><a href="Assignment3.html">Factorial, Sum, Average</a></li>
+              <li><a href="Payroll.html">Simple Payroll</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+    <header>Simple Payroll</header>
+    <main>
+        <section>
+            <h2>Simple Payroll</h2>
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" placeholder="Enter employee name">
+    
+            <label for="hoursWorked">Hours Worked:</label>
+            <input type="number" id="hoursWorked" placeholder="Enter hours worked" min="0">
+    
+            <label for="hourlyRate">Hourly Rate:</label>
+            <input type="number" id="hourlyRate" placeholder="Enter hourly rate" min="0" step="0.01">
+    
+            <label for="taxRate">Tax Rate (%):</label>
+            <input type="number" id="taxRate" placeholder="Enter tax rate" min="0" max="100" step="0.01">
+    
+            <button onclick="calculatePayroll()">Calculate</button>
+            <div id="error" class="error"></div>
+            <div id="results" class="results"></div>
+        </section>
+    </main>
+    
+
+    <script src="Payroll.js"></script>
+</body>
+</html>

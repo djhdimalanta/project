@@ -1,0 +1,89 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: yellow;
+    margin: 0;
+  }
+  header {
+    background-color: #FFB200;
+    font-size: 3em;
+    color: white;
+    padding: 30px 0;
+  }
+  main{
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  p{
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  h2{
+    text-align: left;
+    line-height: 1.5;
+  }
+ 
+  section {
+    margin-bottom: 1.5em;
+}
+
+
+nav {
+    background-color: #EB5B00;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Stick it to the top */
+    z-index: 1000;
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu > li {
+    position: relative; /* Needed for the dropdown */
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #575757;
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Below the parent menu item */
+    left: 0;
+    background-color: #333;
+    display: none; /* Hidden by default */
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #575757;
+  }
+  
+  /* Show Dropdown on Hover */
+  .menu .dropdown:hover .dropdown-menu {
+    display: block; /* Display the dropdown */
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converters</title>
+  <link rel="stylesheet" href="Converter.css">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="WebsiteMain.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Assignments</a>
+        <ul class="dropdown-menu">
+          <li><a href="Converter.html">Conversion Calculators</a></li>
+          <li><a href="Assignment2.html">Income Tax Calculator</a></li>
+          <li><a href="Assignment3.html">Factorial, Sum, Average</a></li>
+          <li><a href="Payroll.html">Simple Payroll</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <header>Assignment #1 - Conversion Tool</header>
+  <main>
+    <h1>Temperature Converter</h1>
+    <div class="form-group">
+      <label for="temperature">Enter Temperature:</label>
+      <input type="number" id="temperature" placeholder="Enter a value">
+    </div>
+    <div class="form-group">
+      <label for="temp-conversion">Convert to:</label>
+      <select id="temp-conversion">
+        <option value="celsius">Celsius (Fahrenheit to Celsius)</option>
+        <option value="fahrenheit">Fahrenheit (Celsius to Fahrenheit)</option>
+      </select>
+    </div>
+    <button id="convertTempBtn">Convert Temperature</button>
+    <div id="temp-result" class="result"></div>
+    <h1>Length Converter</h1>
+    <div class="form-group">
+      <label for="length">Enter Length:</label>
+      <input type="number" id="length" placeholder="Enter a value">
+    </div>
+    <div class="form-group">
+      <label for="length-conversion">Convert to:</label>
+      <select id="length-conversion">
+        <option value="meters">Meters (Feet to Meters)</option>
+        <option value="feet">Feet (Meters to Feet)</option>
+      </select>
+    </div>
+    <button id="convertLengthBtn">Convert Length</button>
+    <div id="length-result" class="result"></div>
+    <script src="Converter.js"></script>
+  </main>
+</html>
